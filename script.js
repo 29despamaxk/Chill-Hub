@@ -3,7 +3,7 @@ async function loadGames() {
   const zoneCount = document.getElementById("zoneCount");
 
   try {
-    const res = await fetch("https://cdn.jsdelivr.net/gh/gn-math/assets@main/zones.json");
+    const res = await fetch("https://cdn.jsdelivr.net/npm/gn-math-dontdmca@1.0.1/package.json");
     const games = await res.json();
 
     zoneCount.textContent = `Found ${games.length} games 🎮`;
